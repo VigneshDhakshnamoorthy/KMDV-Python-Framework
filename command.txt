@@ -1,0 +1,10 @@
+pipenv lock -r > requirements.txt
+
+pipenv install -r requirements.txt
+
+pipenv shell
+pipenv run
+
+
+pytest Tests\Dominos_test.py --html=Report\HTML\report.html
+pytest --html=Report\report.html
