@@ -26,4 +26,4 @@ class TestDominos(TestBase):
         product_page.cart_value_verify()
         product_page.add_cart_list(self.product_list_SID)
         product_page.cart_value_verify()
-        sleep(2)
+        sleep(1)
