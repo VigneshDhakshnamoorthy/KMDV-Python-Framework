@@ -1,7 +1,10 @@
 pipenv lock -r > requirements.txt
+pipenv lock -h > requirements.txt
 
 pipenv install -r requirements.txt
+pipenv uninstall -r requirements.txt
 
+pipenv uninstall -all requirements.txt
 pipenv shell
 pipenv run
 
