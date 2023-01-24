@@ -8,6 +8,7 @@ pipenv uninstall -all requirements.txt
 pipenv shell
 pipenv run
 
+set no_proxy=1
 
 pytest Tests\Dominos_test.py --html=Report\HTML\report.html
 pytest --html=Report\report.html
