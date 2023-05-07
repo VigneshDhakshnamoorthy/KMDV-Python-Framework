@@ -16,7 +16,6 @@ def test_sample():
     except FileNotFoundError:
         with open(f"{os.getcwd()}/Report/report.html", 'r') as f:
             attach = f.read()
-
     message = "Hi Test Message"
     print(message)
     msg['From'] = "frommail"
