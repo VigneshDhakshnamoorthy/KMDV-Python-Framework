@@ -1,7 +1,8 @@
+import sys
+sys.path.append(".")
+
 from time import sleep
-
 import pytest
-
 from Pages.DominosProductPage import DominosProductPage
 from Tests.TestBase import TestBase
 

@@ -4,7 +4,6 @@ from Pages.PageBase import PageBase
 
 
 class DominosHomePage(PageBase):
-
     def __init__(self, browser):
         super().__init__(browser)
 
@@ -31,8 +30,10 @@ class DominosHomePage(PageBase):
         self.wait_page_load()
         self.click("DominosHomePage", "LocationInput_xpath")
         print("Location Button Clicked")
-        self.type(self.locator.get_by("DominosHomePage", "LocationInputBox_xpath"), self.pin)
-        print("Updated The Location To : "+self.pin)
+        self.type(
+            self.locator.get_by("DominosHomePage", "LocationInputBox_xpath"), self.pin
+        )
+        print("Updated The Location To : " + self.pin)
         self.wait_page_load()
         self.click("DominosHomePage", "LocationSearchBtn_xpath")
         print("Locate me Button Clicked")

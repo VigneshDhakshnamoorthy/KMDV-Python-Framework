@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 def test_sample():
     s = smtplib.SMTP(host='outlook.office365.com', port=587)
     s.starttls()
-    s.login("vignesh.dhakshnamoorthy@cesltd.com", "Kmdv@1990")
+    s.login("", "")
     msg = MIMEMultipart()
     try:
         with open("../Report/report.html", 'r') as f:
