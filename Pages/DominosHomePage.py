@@ -17,7 +17,7 @@ class DominosHomePage(PageBase):
 
     def close_popup(self):
         try:
-            self.switch_frame("moe-onsite-campaign-630dd4f74685e185561359ff")
+            self.switch_frame("moe-onsite-campaign-64d4da8b7c17033d8d2a0000")
             self.click("DominosHomePage", "PopupAdCloseBtn_xpath")
             self.switch_default()
             print("Popup Closed")

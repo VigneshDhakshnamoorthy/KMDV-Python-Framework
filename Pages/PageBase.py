@@ -12,7 +12,7 @@ from Utils.LocatorUtil import LocatorUtil
 class PageBase:
     def __init__(self, browser):
         self.browser = browser
-        self.locator = LocatorUtil("mercy")
+        self.locator = LocatorUtil("dominos")
         self.waitTime = 15
         self.pin = None
 
