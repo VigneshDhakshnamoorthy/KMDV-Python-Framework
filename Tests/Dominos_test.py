@@ -14,7 +14,6 @@ class TestDominos(TestBase):
     product_list_NVEG = "ADD CART LIST - NON-VEG PIZZA"
     product_list_SID = "ADD CART LIST - SIDES"
 
-
     @pytest.mark.parametrize(
         "get_browser",
         TestBase.get_data_json("Dominos Add Cart"),
