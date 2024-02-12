@@ -1,4 +1,5 @@
 import sys
+
 sys.path.append(".")
 
 from time import sleep
@@ -13,7 +14,11 @@ class TestDominos(TestBase):
     product_list_NVEG = "ADD CART LIST - NON-VEG PIZZA"
     product_list_SID = "ADD CART LIST - SIDES"
 
-    @pytest.mark.parametrize("get_browser", TestBase.get_data_json("Dominos Add Cart"), indirect=["get_browser"])
+    @pytest.mark.parametrize(
+        "get_browser",
+        TestBase.get_data_json("Dominos Add Cart"),
+        indirect=["get_browser"],
+    )
     def test_dominos(self, get_browser):
         product_page = DominosProductPage(get_browser)
         product_page.is_home_page_loaded()
